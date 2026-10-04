@@ -12,6 +12,10 @@
 \geometry{a4paper, margin=1in}
 \raggedbottom
 
+% Allow consecutive empty headings to break across pages.
+\AddToHook{cmd/section/before}{\par\penalty0}
+\AddToHook{cmd/subsection/before}{\par\penalty0}
+
 % ---------- Theorem Environments ----------
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
@@ -33,171 +37,133 @@
 
 
 % ==================================================
-% DEFINITIONS
+% CHAPTERS
 % ==================================================
 
-\section{Definitions}
-
-% Add important definitions from the module here.
-
+\section{Chapter 1 - Samples, Spaces and Events}
+\subsection{Definitions}
 \begin{definition}
-% Definition goes here.
+The sample space is the set of all possible outcomes for the experiment. It is denoted by $S$ (or $\Omega$).
 \end{definition}
 
+\begin{definition}
+An event is a subset of the sample space. The event occurs if
+the actual outcome is an element of this subset.
+\end{definition}
 
-% ==================================================
-% WEEK 1
-% ==================================================
-
-\section{Week 1}
-
-\subsection{Topics}
-
-% Main topics covered this week.
-
+\begin{definition}
+An event E is a simple event (or elementary event) if it
+consists of a single element of the sample space S.
+\end{definition}
 
 \subsection{Notes}
+The size, or cardinality, of a finite set is the number of elements it contains.
 
-% Your notes go here.
+\begin{itemize}
+\item The set difference $A \setminus B$ (``$A$ take away $B$'') is the set of elements in $A$ but not in $B$:
+\[
+A \setminus B = \{x : x \in A \text{ and } x \notin B\}.
+\]
+\item The symmetric difference $A \triangle B$ is the set of elements in either $A$ or $B$, but not both:
+\[
+A \triangle B = (A \setminus B) \cup (B \setminus A).
+\]
+\end{itemize}
 
+\begin{itemize}
+\item The complement of a set $A$ is the set of elements in the sample space that are not in $A$. It can be denoted by $A'$ or $A^c$:
+\[
+A^c = S \setminus A.
+\]
+\item Two sets $A$ and $B$ are disjoint (or mutually exclusive) if they have no elements in common:
+\[
+A \cap B = \varnothing.
+\]
+\end{itemize}
 
+De Morgan's laws describe how complements interact with unions and intersections:
+\[
+(A \cup B)^c = A^c \cap B^c,
+\qquad
+(A \cap B)^c = A^c \cup B^c.
+\]
+In words, the complement of a union is the intersection of the complements, and the
+complement of an intersection is the union of the complements.
 
-
-% ==================================================
-% WEEK 2
-% ==================================================
-
-\section{Week 2}
-
-\subsection{Topics}
-
+\section{Chapter 2}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-% ==================================================
-% WEEK 3
-% ==================================================
-
-\section{Week 3}
-
-\subsection{Topics}
-
+\section{Chapter 3}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 4
-% ==================================================
-
-\section{Week 4}
-
-\subsection{Topics}
-
+\section{Chapter 4}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 5
-% ==================================================
-
-\section{Week 5}
-
-\subsection{Topics}
-
+\section{Chapter 5}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 6
-% ==================================================
-
-\section{Week 6}
-
-\subsection{Topics}
-
+\section{Chapter 6}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 7
-% ==================================================
-
-\section{Week 7}
-
-\subsection{Topics}
-
+\section{Chapter 7}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-% ==================================================
-% WEEK 8
-% ==================================================
-
-\section{Week 8}
-
-\subsection{Topics}
-
+\section{Chapter 8}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 9
-% ==================================================
-
-\section{Week 9}
-
-\subsection{Topics}
-
+\section{Chapter 9}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 10
-% ==================================================
-
-\section{Week 10}
-
-\subsection{Topics}
-
+\section{Chapter 10}
+\subsection{Definitions}
 \subsection{Notes}
 
-
-
-
-% ==================================================
-% WEEK 11
-% ==================================================
-
-\section{Week 11}
-
-\subsection{Topics}
-
+\section{Chapter 11}
+\subsection{Definitions}
 \subsection{Notes}
 
+\section{Chapter 12}
+\subsection{Definitions}
+\subsection{Notes}
 
+\section{Chapter 13}
+\subsection{Definitions}
+\subsection{Notes}
 
+\section{Chapter 14}
+\subsection{Definitions}
+\subsection{Notes}
 
-% ==================================================
-% WEEK 12
-% ==================================================
+\section{Chapter 15}
+\subsection{Definitions}
+\subsection{Notes}
 
-\section{Week 12}
+\section{Chapter 16}
+\subsection{Definitions}
+\subsection{Notes}
 
-\subsection{Topics}
+\section{Chapter 17}
+\subsection{Definitions}
+\subsection{Notes}
 
+\section{Chapter 18}
+\subsection{Definitions}
+\subsection{Notes}
+
+\section{Chapter 19}
+\subsection{Definitions}
+\subsection{Notes}
+
+\section{Chapter 20}
+\subsection{Definitions}
 \subsection{Notes}
 
 
